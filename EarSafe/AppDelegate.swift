@@ -55,5 +55,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         advancedWindow?.makeKeyAndOrderFront(nil)
+        advancedWindow?.orderFrontRegardless()
     }
 }

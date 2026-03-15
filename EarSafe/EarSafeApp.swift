@@ -3,7 +3,7 @@
 //  EarSafe
 //
 //  Created by Abhishek Ruhela on 3/14/26.
-//import SwiftUI
+//
 import SwiftUI
 
 @main
@@ -12,7 +12,7 @@ struct EarSafeApp: App {
 
     var body: some Scene {
         Settings {
-            EmptyView()
+            SettingsView()
         }
     }
 }

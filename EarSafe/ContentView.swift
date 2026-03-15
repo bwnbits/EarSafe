@@ -77,6 +77,10 @@ struct ContentView: View {
                 
                 Spacer()
                 
+                Button("Settings") {
+                    NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+                }
+                
                 Button("Quit") {
                     NSApplication.shared.terminate(nil)
                 }
@@ -89,7 +93,6 @@ struct ContentView: View {
     func sliderRow(_ title: String,
                    value: Binding<Double>,
                    range: ClosedRange<Double> = -12...12) -> some View {
-        
         VStack(alignment: .leading, spacing: 6) {
             Text(title)
                 .font(.caption)
